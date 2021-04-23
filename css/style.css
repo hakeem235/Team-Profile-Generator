@@ -1,0 +1,36 @@
+body{
+    background-color: #dddddd;
+    color: black;
+    font-size: 18px;
+    font-family: 'Libre Baskerville', serif;
+
+}
+h1{
+    font-size: 54px;
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+}
+
+.card-title{
+    color:#fff;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container{
+    width:50vw;
+    margin-bottom: 10px;
+    min-height: 100vh;
+
+}
+.card{
+    margin: 3px;
+    border:solid 2px;
+}
+.card-body{
+    background-color: coral;
+}
+footer{
+    text-align: center;
+    font-size: 16px;
+    padding:5px;
+}
