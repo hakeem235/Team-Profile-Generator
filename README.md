@@ -7,7 +7,7 @@ One of the most important aspects of programming is writing code that is readabl
      
               1 Clone the project repository to your local machine
               2 Install npm module 
-              3 Run node app.js in your Terminal
+              3 Run node index.js in your Terminal
               4 Follow the promt instruction in the terminal screen
               5 The program will generate an HTML with your provided information
 
