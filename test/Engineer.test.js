@@ -1,17 +1,17 @@
 const Engineer = require("../lib/Engineer");
-it("should set github account property to new object", ()=> {
-    const itValue = "GithubUser";
-    const e = new Engineer("Tom","12", "test@test", itValue);
-    expect(e.github).toBe(itValue);
+test("should set github account property to new object", ()=> {
+    const testValue = "GithubUser";
+    const e = new Engineer("Alex","12", "test@test.com", testValue);
+    expect(e.github).toBe(testValue);
 });
 
-it("should get github username using getGithub() method", ()=> {
-    const itValue = "GithubUser";
-    const e = new Engineer("Tom","12", "test@test", itValue);
-    expect(e.getGithub()).toBe(itValue);
+test("should get github username using getGithub() method", ()=> {
+    const testValue = "GithubUser";
+    const e = new Engineer("Alex","12", "test@test.com", testValue);
+    expect(e.getGithub()).toBe(testValue);
 });
-it("should get the role of the new engineer object using getRole() method", ()=> {
-    const itValue = "Engineer";
-    const e = new Engineer("Tom","12", "test@test", itValue);
-    expect(e.getRole()).toBe(itValue);
+test("should get the role of the new engineer object using getRole() method", ()=> {
+    const testValue = "Engineer";
+    const e = new Engineer("Alex","12", "test@test.com", testValue);
+    expect(e.getRole()).toBe(testValue);
 });

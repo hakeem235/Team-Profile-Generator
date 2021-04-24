@@ -1,66 +1,19 @@
-const Employee = require("../lib/Employee");
-describe("Employee", () => {
-    describe("Initialization", () => {
-        it("is a base class instantiate Employee instance", () => {
-            // Arrange
-            const e = new Employee("Tom");
-            //Assert
-            expect(typeof (e)).toBe("object");
-        });
-        it("should set the name property via constructor as argument", () => {
-        const name = "Mark";
-        const e = new Employee(name);
-        expect(e.name).toBe(name);
-        });
-
-        it("should set the id property via constructor as argument", () => {
-            //Arrange 
-            const itId = 29;
-            // Act
-            const e = new Employee("Ahmed",itId);
-            // Assert
-            expect(e.id).toBe(itId);
-        });
-        
-        it("should set the email property via constructor as argument", () => {
-            //Arrange 
-            const itEmail = "test@test";
-            const e = new Employee("Ahmed",100,itEmail);
-            // Assert
-            expect(e.email).toBe(itEmail);
-        });
+const Manager = require("../lib/Manager");
+describe("Manager", () => {
+    it("should set officeNumber property to new object via constructor" , () => {
+        const itValue = 124;
+        const e = new Manager("Sarah", 100,"it@it.com",itValue);
+        expect(e.officeNumber).toBe(itValue);
 
     });
-    describe("getName", () => {
-        it("should return the name using getName() method", () => {
-            const itValue = "Ahmed";
-            const e = new Employee(itValue);
-            expect(e.getName()).toBe(itValue);
-        });
+    it("Can get office Number via getOfficeNumber()", () => {
+        const itValue = 124;
+        const e = new Manager("Sarah", 100, "it@it.com", itValue);
+        expect(e.getOfficeNumber()).toBe(itValue);
     });
-    describe("getId", () => {
-        it("should return the id using getId() method", () => {
-            const itValue = 20;
-            const e = new Employee("Ahmed", itValue);
-            expect(e.getId()).toBe(itValue);
-        });
+    it("should get the role of the new engineer object using getRole() method", () => {
+        const itValue = "Manager";
+        const e = new Manager("Sarah", 100, "it@it.com", 124, itValue);
+        expect(e.getRole()).toBe(itValue);
     });
-    describe("getEmail", () => {
-        it("should return the email using getEmail() method", () => {
-            const itValue = "test@test";
-            const e = new Employee("Ahmed", 100, itValue);
-            expect(e.getEmail()).toBe(itValue);
-        });
-    });
-    describe("getRole", () => {
-        it("should return the role of the instance objects using getRole() method ", () => {
-            // Arrange
-            const itValue = "Employee";
-            // Act
-            const e = new Employee("Ahmed", 100, "test@test", itValue);
-            // Assert
-            expect(e.getRole()).toBe(itValue);
-        });
-    });
-
 });
