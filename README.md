@@ -12,9 +12,9 @@ One of the most important aspects of programming is writing code that is readabl
               5 The program will generate an HTML with your provided information
 
 ## Usage
-![Screenshoot]()
+![Screenshoot](img/screenshoot.png)
 
-[Videolink]()
+[Videolink](https://youtu.be/gqa-p1hLwmM)
 
 ## Tests
 The unit test is included in the application for all classes listed in the lib directory and in the test directory you can look the respective testing code for each classes. The jest library is used for testing the app and we need to create dependencies of it in package json file.You can run the tests using the following command line from your terminal.

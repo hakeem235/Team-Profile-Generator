@@ -1,5 +1,5 @@
 body{
-    background-color: #dddddd;
+    background-color: rgb(230, 230, 230);
     color: black;
     font-size: 18px;
     font-family: 'Libre Baskerville', serif;
@@ -27,7 +27,7 @@ h1{
     border:solid 2px;
 }
 .card-body{
-    background-color: coral;
+    background-color: darkgray;
 }
 footer{
     text-align: center;
